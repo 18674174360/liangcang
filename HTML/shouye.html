@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Cache-Control" content="no-siteapp"><!-- 防止百度移动搜索转码 -->
+  <meta name="renderer" content="webkit"><!-- 让部分国产浏览器默认采用高速模式渲染页面 -->
+  <title>良仓.生活美学平台</title>
+  <meta name="keywords" content="shopping,share,social,design,designer,product,object,良仓、i良仓、物品、生活家、设计、导购、恋物、创意、良品、分享、社交、电商、淘宝、新视线、设计品、设计师、原创设计、北欧、独立设计师、设计品牌、明星导购、达人、设计商店、在线商店、闪购、打折、折扣、礼物、关注、粉丝、推荐、喜欢圈子、日本、全球购、丹麦、海外购、瑞典、复古、家居、家具、质感、品质" />
+  <meta name="description" content="" />
+  <link rel="shortcut icon" href="http://imgs-qn.iliangcang.com/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="http://imgs-qn.iliangcang.com/css/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://imgs-qn.iliangcang.com/css/liangcang.css" />
+
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/html5.js"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/utils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/jwplayer/jwplayer.js"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/main.js?asd"></script>
+  <script type="text/javascript" language="JavaScript" src="http://imgs-qn.iliangcang.com/js/user.js"></script>
+    <script src="http://imgs-qn.iliangcang.com/js/jquery.imgbox.pack.js"></script>
+    <script src="http://imgs-qn.iliangcang.com/css/image_big.css"></script>
+
+
+    <!-- <script type="text/javascript" language="JavaScript" src="../JS/cookie.js"></script> -->
+  
+  <style>
+    .storeLeft {
+        width: 750px;
+    }
+    a.a_style:link{
+        color:rgb(153,153,153);
+    }
+    a.a_style:hover{
+        color:rgb(51,51,51);
+    }
+    p img{
+        width:100%;
+    }
+ 
+
+  </style>
+  
+
+</head>
+<body id="body">
+
+<div id="header">
+  <div class="header-top">
+    <div class="wrap clearfix">
+      <div class="logo fl"><a href="./shouye.html"></a></div>
+      <ul class="nav fr" id="nav">
+        <li class="login-reg-btn"><a class="loginBtn shade"  href="./login.html">登录</a><a class="registerBtn shade" href="./zc.html">注册</a></li>
+        <li class="line"></li>
+        <li><a class="cart-wrapper" href="./cart.html">购物车</a></li>
+        <li class="line"></li>
+        <li class="posr"><a target="_blank">消息</a></li>
+        <li class="line"></li>
+        <li class="add"><a class="shade">添加良品</a></li>
+          <li class="add"><a class="shade">资质证照 / 协议规则</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--二级导航开始-->
+  <div class="subMenu clearfix">
+    <ul class="fl">
+      <li class="homepage" style="width:86px;"><a href="./shouye.html" >首页</a></li>
+      <li class="subLi" sub_id="0"><a href="./shangdian.html"> 商店
+  	<div class="submHide store "  id="storedats" style="height: 300px;opacity: 0;">
+
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;" sub_id="1">
+      <a>杂志
+        <div class="submHide magazine" id="magazined">
+
+        </div>
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;" sub_id="2"><a>分享
+        <div class="submHide share clearfix" id="shared">
+
+        </div>
+
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;"><a  >达人</a></li>
+       <li class="superman" style="width:86px;"><a >有偿资讯</a></li>
+      <p class="clr"></p>
+    </ul>
+    <div class="search fr">
+      <div class="search-input-wrap"> <div class="search-input" style="left: 280px;">
+        <input type="text" id="glb_keyword" placeholder="search..." onkeyup="enterSearchLister(event);"  >
+        </div> </div>
+        <s></s>
+      <a target="_self" href="javascript:void(0)" class="search-icon" style="opacity: 1;"></a></div>
+  </div>
+  <!-- 商店 -->
+  <div class="header-subnav" style="position:relative;margin: 0 auto;text-align: center;width: 1000px;">
+  	<div id="header-subnav-wrapper">
+  		<div class="hide" id="shopdatas" style="display: block;">
+  			<div class="storeLeft">
+	            <dl id="navOurCatP_45" navCat_id="45" style="width:107px;height: 100px;">
+                    <div onMouseOver="javascript:show(this,'0')" onMouseOut="javascript:hide(this,'0')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23687.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="" class="ctxt">家居</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);margin-top:10px;margin-left:13px;display:block;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle0"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_62" navCat_id="62" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'1')" onMouseOut="javascript:hide(this,'1')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23686.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0062" class="ctxt">文具</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle1"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_69" navCat_id="69" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'2')" onMouseOut="javascript:hide(this,'2')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23683.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0069" class="ctxt">数码</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle2"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_77" navCat_id="77" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'3')" onMouseOut="javascript:hide(this,'3')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23682.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0077" class="ctxt">玩乐</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle3"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_82" navCat_id="82" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'4')" onMouseOut="javascript:hide(this,'4')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23684.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0082" class="ctxt">餐厨</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle4"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_92" navCat_id="92" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'5')" onMouseOut="javascript:hide(this,'5')">
+	            	    <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23680.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0092" class="ctxt">美食</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle5"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_112" navCat_id="112" style="width:107px;">
+                        <div onMouseOver="javascript:show(this,'6')" onMouseOut="javascript:hide(this,'6')">
+
+	            	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:20px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23678.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0112" class="ctxt">服装</a>
+                                </div>
+                            </div>
+                        </dt>
+                         </div>
+                        <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle6"></div>
+                </dl>
+
+                
+	            <dl id="navOurCatP_129" navCat_id="129" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'7')" onMouseOut="javascript:hide(this,'7')">
+	            	    <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23676.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">鞋包</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle7"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_141" navCat_id="141" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'8')" onMouseOut="javascript:hide(this,'8')">
+	                 	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23675.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">配饰</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);
+                        -webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle8"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_154" navCat_id="154" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'9')" onMouseOut="javascript:hide(this,'9')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23681.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a class="ctxt">美护</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle9"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_166" navCat_id="166" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'10')" onMouseOut="javascript:hide(this,'10')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23674.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">出行</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle10"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_182" navCat_id="182" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'11')" onMouseOut="javascript:hide(this,'11')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23668.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">图书</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle11"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_214" navCat_id="214" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'12')" onMouseOut="javascript:hide(this,'12')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23672.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">艺术</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle12"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_279" navCat_id="279" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'13')" onMouseOut="javascript:hide(this,'13')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30074.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a  class="ctxt">水具</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle13"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_358" navCat_id="358" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'14')" onMouseOut="javascript:hide(this,'14')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:-85px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30029.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a class="ctxt">运动</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle14"></div>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--二级导航结束-->
+</div>
+
+
+<script type="text/javascript" src="https://imgs-qn.iliangcang.com/js/jquery-jcarousel.js"></script>
+<script type="text/javascript" src="https://imgs-qn.iliangcang.com/js/theslidershow.js?v=G.ilc.201404230003"></script>
+    <div id="main">
+	      <!-- 首页轮播 start -->
+            <div id="actionContainer" style='margin:23px 0px 0px 0px;'>
+	        	<div style='left:0;' class='bigarea' id='leftArea' ></div>
+	        	<div style='right:0;' class='bigarea' id='rightArea'></div>
+	    		<ul  id="mycarousel">
+                    <li class="v2">
+                        <a href="https://www.iliangcang.com/i/topicapp/202106074827" target="_blank">
+                            <img src="https://imgs-qn.iliangcang.com/ware/slider/1702.gif"  target="_blank" alt="" title=""/>
+                        </a>
+                    </li>
+                    <li class="v2">
+                        <a href="https://www.iliangcang.com/i/topicapp/202106024916" target="_blank">
+                            <img src="https://imgs-qn.iliangcang.com/ware/slider/1701.jpg"  target="_blank" alt="" title=""/>
+                        </a>
+                    </li>
+                    <li class="v2">
+                        <a href="https://www.iliangcang.com/i/topicapp/202105310325" target="_blank">
+                            <img src="https://imgs-qn.iliangcang.com/ware/slider/1698.jpg"  target="_blank" alt="" title=""/>
+                        </a>
+                    </li>
+                    <li class="v2">
+                        <a href="https://www.iliangcang.com/i/topicapp/202105171632" target="_blank">
+                            <img src="https://imgs-qn.iliangcang.com/ware/slider/1675.jpg"  target="_blank" alt="" title=""/>
+                        </a>
+                    </li>
+	    		</ul>
+	    	</div>
+	    	<div id="actionOpt" style="border-bottom:none; font-size:0px;text-align:center;margin-top:3px;" >
+                <a href="javascript:;"  class="v2 checked2"  > </a>
+                <a href="javascript:;"  class="v2 "  > </a>
+                <a href="javascript:;"  class="v2 "  > </a>
+                <a href="javascript:;"  class="v2 "  > </a>
+	        </div>
+	     
+
+	
+
+	    <div class="hGCtle">人气良品</div>
+
+
+	    <div class="shopListCon styl_3" style="margin-top:20px;">
+            <div class="item first" >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280128" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280128.jpg?t=1593490248" title="小金条系列车载香氛 | 来我的车里，吸一口仙气" alt="小金条系列车载香氛 | 来我的车里，吸一口仙气" /></a>
+                    <a href="/i/goods/?id=280128" class="goodsInfo" target="_blank">
+                        <p class="money">¥329.00</p>
+                        <p class="tle">小金条系列车载香氛 | 来我的车里，吸一口仙气</p>
+                        <p class="desc">来我的车里，吸一口仙气</p>
+                    </a>
+				</div>
+                <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1346" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1346.jpg"/>DAILY LAB</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280128" goods_uid="0">613</a>
+                </div>
+            </div>
+
+
+            <div class="item " >
+                <div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280147" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280147.jpg?t=1593756787" title="干湿两用气垫气囊梳子 | 磨砂梳柄 顺发造型" alt="干湿两用气垫气囊梳子 | 磨砂梳柄 顺发造型" /></a>
+                    <a href="/i/goods/?id=280147" class="goodsInfo" target="_blank">
+                        <p class="money">¥209.00</p>
+                        <p class="tle">干湿两用气垫气囊梳子 | 磨砂梳柄 顺发造型</p>
+                        <p class="desc">橡胶气囊 舒适按摩 磨砂梳柄 顺发造型</p>
+                    </a>
+                    
+				</div>
+                <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1072" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1072.jpg"/>KENT肯特</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280147" goods_uid="0">604</a>
+               </div>
+            </div>
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280112" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280112.jpg?t=1592967358" title="桌面即热式饮水机S803 | 三秒即热，现烧现喝" alt="桌面即热式饮水机S803 | 三秒即热，现烧现喝" /></a>
+                    <a href="/i/goods/?id=280112" class="goodsInfo" target="_blank">
+                        <p class="money">¥1348.00</p>
+                        <p class="tle">桌面即热式饮水机S803 | 三秒即热，现烧现喝</p>
+                        <p class="desc">3秒速热|8段水温|3种水源|安全童锁，更小更强大</p>
+                    </a>
+                </div>
+                <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1620" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1620.jpg"/>北鼎</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280112" goods_uid="0">609</a>
+               </div>
+            </div>
+
+
+            <div class="item first" >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div class="optCon"></div>
+            		<a href="/i/goods/?id=280105" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280105.jpg?t=1592802270" title="蜂蜜牛奶手工皂 | 深入滋养，肌肤细腻嫩滑" alt="蜂蜜牛奶手工皂 | 深入滋养，肌肤细腻嫩滑" /></a>
+                    <a href="/i/goods/?id=280105" class="goodsInfo" target="_blank">
+                        <p class="money">¥70.00</p>
+                        <p class="tle">蜂蜜牛奶手工皂 | 深入滋养，肌肤细腻嫩滑</p>
+                        <p class="desc">牛奶和蜂蜜让肌肤更紧致，滋养肌肤</p>
+                    </a>
+                </div>
+                <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1882" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1882.jpg"/>施丹兰</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280105" goods_uid="0">598</a>
+               </div>
+            </div>
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280089" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280089.jpg?t=1592295716" title="英国老牌城市系列剑桥包 | 源自英伦 从经典到潮流" alt="英国老牌城市系列剑桥包 | 源自英伦 从经典到潮流" /></a>
+                    <a href="/i/goods/?id=280089" class="goodsInfo" target="_blank">
+                        <p class="money">¥1210.00</p>
+                        <p class="tle">英国老牌城市系列剑桥包 | 源自英伦 从经典到潮流</p>
+                        <p class="desc">精选细腻纹理牛皮，工整缝线，优质配件</p>
+                    </a>
+                </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1878" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1878.jpg"/>Zatchels</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280089" goods_uid="0">603</a>
+               </div>
+            </div>
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang">
+				 	<div style="display: flex;align-items: center"><span style="padding:0px 4px 0px 4px;margin-left:10px;letter-spacing:2px;font-size:12px;color:white;background-color:rgb(220,150,180)">良仓618</span></div>
+                </div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280078" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280078.jpg?t=1592288912" title="梵高系列20英寸拉杆箱 | 梵高名画复原，旅行的艺术" alt="梵高系列20英寸拉杆箱 | 梵高名画复原，旅行的艺术" /></a>
+                    <a href="/i/goods/?id=280078" class="goodsInfo" target="_blank">
+                        <p class="money">¥399.00</p>
+                        <p class="tle">梵高系列20英寸拉杆箱 | 梵高名画复原，旅行的艺术</p>
+                        <p class="desc">全新设计书籍形状三层PC箱体，铝镁合金拉杆</p>
+                    </a>
+                       <span style="display:block;position:absolute;bottom:0px;right:0px;z-index:10;width:60px;height:60px;"><img src="https://imgs-qn.iliangcang.com/ware/promotion/icon/197.jpg" style="width:50px;height:50px;"/></span> </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=395" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/395.jpg"/>WAAGE</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280078" goods_uid="0">596</a>
+               </div>
+            </div>
+
+            <div class="item first" >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280059" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280059.jpg?t=1591326084" title="柠檬味体能充沛泡腾*4 | 及时一片 速速精神" alt="柠檬味体能充沛泡腾*4 | 及时一片 速速精神" /></a>
+                    <a href="/i/goods/?id=280059" class="goodsInfo" target="_blank">
+                        <p class="money">¥198.00</p>
+                        <p class="tle">柠檬味体能充沛泡腾*4 | 及时一片 速速精神</p>
+                        <p class="desc">提神醒脑，集中精力，提升肌肉心肺机能</p>
+                    </a>
+                </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1873" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1873.jpg"/>WELLEXIR</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280059" goods_uid="0">599</a>
+               </div>
+            </div>
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div class="optCon"> </div>
+            		<a href="/i/goods/?id=280064" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280064.jpg?t=1591345770" title="乐穿梭茶具 | 茶具+茶叶精美端午礼盒" alt="乐穿梭茶具 | 茶具+茶叶精美端午礼盒" /></a>
+                    <a href="/i/goods/?id=280064" class="goodsInfo" target="_blank">
+                        <p class="money">¥299.00</p>
+                        <p class="tle">乐穿梭茶具 | 茶具+茶叶精美端午礼盒</p>
+                        <p class="desc">一体化设计，化繁为简。</p>
+                    </a>
+                </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=529" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/529.jpg"/>哲品</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280064" goods_uid="0">604</a>
+               </div>
+            </div>
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+                    <a href="/i/goods/?id=280062" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280062.jpg?t=1591344104" title="动态雕塑平衡装置 | 大胆的基色，漂浮杆" alt="动态雕塑平衡装置 | 大胆的基色，漂浮杆" /></a>
+                    <a href="/i/goods/?id=280062" class="goodsInfo" target="_blank">
+                        <p class="money">¥1550.00</p>
+                        <p class="tle">动态雕塑平衡装置 | 大胆的基色，漂浮杆</p>
+                        <p class="desc">西班牙Volta Mobile动态雕塑平衡装置动态雕塑</p>
+                    </a>
+                </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1874" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1874.jpg"/>Volta </a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280062" goods_uid="0">607</a>
+               </div>
+            </div>
+
+
+            <div class="item first" >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=280054" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280054.jpg?t=1591169600" title="茶水分离泡茶杯 | 泡出传统中式茶味" alt="茶水分离泡茶杯 | 泡出传统中式茶味" /></a>
+                    <a href="/i/goods/?id=280054" class="goodsInfo" target="_blank">
+                        <p class="money">¥179.00</p>
+                        <p class="tle">茶水分离泡茶杯 | 泡出传统中式茶味</p>
+                        <p class="desc">浓淡两相宜， 泡出传统中式茶味，养生花茶随手一杯。...</p>
+                    </a>
+                </div>
+                <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1620" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1620.jpg"/>北鼎</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280054" goods_uid="0">607</a>
+               </div>
+            </div>
+
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div class="optCon"></div>
+            		<a href="/i/goods/?id=280056" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/280/280056.jpg?t=1591239095" title="香梅 昂 吟酿清酒 | 入口清爽，回甘无穷" alt="香梅 昂 吟酿清酒 | 入口清爽，回甘无穷" /></a>
+                    <a href="/i/goods/?id=280056" class="goodsInfo" target="_blank">
+                        <p class="money">¥260.00</p>
+                        <p class="tle">香梅 昂 吟酿清酒 | 入口清爽，回甘无穷</p>
+                        <p class="desc">巧妙地激发料理的鲜甜，更凸显食材的本味，独饮亦佳...</p>
+                    </a>
+                </div>
+               <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1542" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1542.jpg"/>米嗅</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="280056" goods_uid="0">602</a>
+               </div>
+            </div>
+         
+         
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang">
+                    <div style="display: flex;align-items: center"><span style="padding:0px 4px 0px 4px;margin-left:10px;letter-spacing:2px;font-size:12px;color:white;background-color:rgb(220,150,180)">良仓618</span></div></div>
+                    <div class="optCon"></div>
+            		<a href="/i/goods/?id=279982" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279982.jpg?t=1590113833" title="室内香氛喷雾150ml | 转瞬拥有天然的清新宜人" alt="室内香氛喷雾150ml | 转瞬拥有天然的清新宜人" /></a>
+                    <a href="/i/goods/?id=279982" class="goodsInfo" target="_blank">
+                        <p class="money">¥220.00</p>
+                        <p class="tle">室内香氛喷雾150ml | 转瞬拥有天然的清新宜人</p>
+                        <p class="desc">采颉大自然芬芳，富足心灵与精神。100% 天然精油调制而成...</p>
+                    </a>
+                    <span style="display:block;position:absolute;bottom:0px;right:0px;z-index:10;width:60px;height:60px;"><img src="https://imgs-qn.iliangcang.com/ware/promotion/icon/197.jpg" style="width:50px;height:50px;"/></span>
+                </div>
+               <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1831" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1831.jpg"/>100 BON</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279982" goods_uid="0">601</a>
+               </div>
+           </div>
+            
+        
+           <div class="item first" >
+               <div class="imgCon">
+                    <div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div class="optCon"></div>
+            		<a href="/i/goods/?id=279987" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279987.jpg?t=1590377253" title="Moonii陶瓷月相灯 | 24小时制，由月知时" alt="Moonii陶瓷月相灯 | 24小时制，由月知时" /></a>
+                    <a href="/i/goods/?id=279987" class="goodsInfo" target="_blank">
+                        <p class="money">¥299.00</p>
+                        <p class="tle">Moonii陶瓷月相灯 | 24小时制，由月知时</p>
+                        <p class="desc">触摸感应开关4000mAH锂电池2种职能模式</p>
+                    </a>
+                    
+                </div>
+               <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1860" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1860.jpg"/>小鸣</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279987" goods_uid="0">631</a>
+               </div>
+            </div>
+            
+            
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div class="optCon"></div>
+            		<a href="/i/goods/?id=279988" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279988.jpg?t=1590378810" title="小风扇落地电扇 | 四档风速调节，低噪音运行" alt="小风扇落地电扇 | 四档风速调节，低噪音运行" /></a>
+                    <a href="/i/goods/?id=279988" class="goodsInfo" target="_blank">
+                        <p class="money">¥239.00</p>
+                        <p class="tle">小风扇落地电扇 | 四档风速调节，低噪音运行</p>
+                        <p class="desc">90°手动上下风向，LED实时电量提示，15小时超长续航...</p>
+                    </a>
+                </div>
+               <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1857" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1857.jpg"/>SOLEUSAIR</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279988" goods_uid="0">600</a>
+               </div>
+            </div>
+            
+            
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=279974" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279974.jpg" title="非洲手鼓-圆 | 带动孩子音乐细胞" alt="非洲手鼓-圆 | 带动孩子音乐细胞" /></a>
+                    <a href="/i/goods/?id=279974" class="goodsInfo" target="_blank">
+                        <p class="money">¥349.00</p>
+                        <p class="tle">非洲手鼓-圆 | 带动孩子音乐细胞</p>
+                        <p class="desc">以手鼓带动孩子的音乐细胞，设计灵感源自Cojon手鼓盒...</p>
+                    </a>
+                </div>
+                <div class="bar">
+                    <a class="who" href="/i/brand/intro/?id=1851" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1851_1589871381.jpg"/>PlanToys</a>
+                    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279974" goods_uid="0">602</a>
+               </div>
+            </div>
+
+
+            <div class="item first" >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+                    <div style="display: flex;align-items: center"><span style="padding:0px 4px 0px 4px;margin-left:10px;letter-spacing:2px;font-size:12px;color:white;background-color:rgb(220,150,180)">良仓618</span></div>
+                    
+                    <div class="optCon"></div>
+                        <a href="/i/goods/?id=279960" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279960.jpg?t=1589863004" title="三折榻榻米垫 | 日本首相府都用它" alt="三折榻榻米垫 | 日本首相府都用它" /></a>
+                        <a href="/i/goods/?id=279960" class="goodsInfo" target="_blank">
+                            <p class="money">¥1028.00</p>
+                            <p class="tle">三折榻榻米垫 | 日本首相府都用它</p>
+                            <p class="desc">凉而不冰 天然蔺草香 清香舒爽 便携好收纳 </p>
+                        </a>
+                        <span style="display:block;position:absolute;bottom:0px;right:0px;z-index:10;width:60px;height:60px;"><img src="https://imgs-qn.iliangcang.com/ware/promotion/icon/197.jpg" style="width:50px;height:50px;"/></span>
+                    </div>
+                <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1850" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1850.jpg"/>池彦</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279960" goods_uid="0">606</a>
+               </div>
+            </div>
+
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang">	</div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=279883" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279883.jpg?t=1588752232" title="深海四十寻 神奇修护精华液 | 抗糖化，修复老化细胞" alt="深海四十寻 神奇修护精华液 | 抗糖化，修复老化细胞" /></a>
+                    <a href="/i/goods/?id=279883" class="goodsInfo" target="_blank">
+                        <p class="money">¥268.00</p>
+                        <p class="tle">深海四十寻 神奇修护精华液 | 抗糖化，修复老化细胞</p>
+                        <p class="desc"> 修复皮肤代谢、受损细胞、角质屏障、细纹松弛，使皮肤紧致透亮... </p>
+                    </a>
+                    
+			    </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=1792" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/1792.jpg"/>unichi</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279883" goods_uid="0">602</a>
+               </div>
+            </div>
+
+            <div class="item " >
+            	<div class="imgCon">
+					<div style="display:block;position:absolute;top:12px;left:0px;z-index:10;height: 18px;line-height: 18px;font-family: pingfang"></div>
+					<div class="optCon"></div>
+            		<a href="/i/goods/?id=279899" target="_blank"><img  src="https://imgs-qn.iliangcang.com/ware/goods/big/2/279/279899.jpg?t=1588921348" title="可可狐海盐奶酥巧克力锤 | 香脆面包脆片奶香四溢" alt="可可狐海盐奶酥巧克力锤 | 香脆面包脆片奶香四溢" /></a>
+                    <a href="/i/goods/?id=279899" class="goodsInfo" target="_blank">
+                        <p class="money">¥56.00</p>
+                        <p class="tle">可可狐海盐奶酥巧克力锤 | 香脆面包脆片奶香四溢</p>
+                        <p class="desc">细细一层海盐显著提升巧克力风味</p>
+                    </a>
+                </div>
+               <div class="bar">
+               	    <a class="who" href="/i/brand/intro/?id=615" target="_blank"><img src="https://imgs-qn.iliangcang.com/ware/brand/615.jpg?t=1481857841"/>狐狸事务所FoxStore</a>
+               	    <a class="goodsFavCount"  href="javascript:;" onclick="goodsAddFavour(event,this);"  goodsid="279899" goods_uid="0">607</a>
+               </div>
+            </div>
+          </div>
+
+        <p class="clr"></p>
+        <div id="pagers" style="text-align:center;"><a href="/i/shop/" target="_blank" class="osm-more" style="margin-top:60px;"></a></div>
+
+
+    </div>
+
+
+<div id="service">
+	<a href="/i/shop/"><p class="hand"></p></a>
+    <div class="slogen">
+    	<dl class="fore1">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">全球精品</p>
+                <p class="english">Global Selections</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore2">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">正品保证</p>
+                <p class="english">Authenticity Guaranteed</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore3">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">全场包邮</p>
+                <p class="english">Free Delivery</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore4">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop phonehm"></p>
+                <p class="english">工作日 09:00-18:00</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <p class="clr"></p>
+    </div>
+</div>
+
+<div id="footer" style="height:300px;">
+  <div class="wrap">
+    <div class="footLeft fl">
+        <a style="display:block;height:44px;width:196px;" href="/i/our/appdown" target="_blank">
+            <div class="download">
+                <p class="iPhone"><span class="numLeFont">iPhone Android</span></p>
+                <p class="client-down">客户端下载</p>
+            </div>
+        </a>
+        <div class="friendly">
+            <p class="toplink"> <a href="/i/our/" target="_blank" class="first">关于良仓</a><a href="/i/our/service/" target="_blank" rel="nofollow">服务协议</a><a href="/i/our/law/" target="_blank" rel="nofollow">隐私保护政策</a><a href="/i/our/help/" target="_blank" rel="nofollow">使用指南</a><a href="/i/our/contact/" target="_blank" rel="nofollow">联系我们</a><a href="http://www.lagou.com/gongsi/2236.html" target="_blank" rel="nofollow">加入我们</a><a href="/i/our/flinks/" target="_blank" rel="nofollow">友情链接</a><a href='javascript:;' onclick="showSendMsgWin('良仓',1640);" class='contactUs' class="last">私信良仓</a></p>
+            <p><span class="numLeFont">&copy;</span>&nbsp;2013-2019 北京良仓文化传播有限公司版权所有&nbsp;</p>
+            <p>&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司&nbsp;&nbsp;电话：010-58696733</p>
+            <p>&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+            <p>&nbsp;&nbsp;社会信用统一代码：91110105059231575L&nbsp;&nbsp;食品许可证：JY11105160159557&nbsp;&nbsp;</p>
+            <p>&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证&nbsp;&nbsp;图书证编号：新出发京零 字第 朝 150051 号&nbsp;&nbsp;</p>
+            <p> <a style="background:url()" href="http://www.beian.miit.gov.cn" target="_blank">  <span style="margin-left: 3px;">京</span><span class="numLeFont">ICP</span>备<span class="numLeFont">13010677</span>号<span class="numLeFont">-1</span></a>&nbsp;京公网安备<span class="numLeFont">11010502025627</span></p>
+        </div>
+    </div>
+    <div class="footRight text-r fr">
+      <p class="clr"></p>
+      <div class="commun"><ul><li><a class="douban" href="http://site.douban.com/208766/" target="_blank"></a></li><li><a class="sina" href="http://weibo.com/iliangcang" target="_blank"></a></li><li><a class="= weixin" href="javascript:;">
+      </div>
+    </div>
+   </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+

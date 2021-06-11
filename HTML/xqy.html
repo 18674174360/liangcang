@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Cache-Control" content="no-siteapp"><!-- 防止百度移动搜索转码 -->
+  <meta name="renderer" content="webkit"><!-- 让部分国产浏览器默认采用高速模式渲染页面 -->
+  <title>详情页</title>
+  <meta name="keywords" content="shopping,share,social,design,designer,product,object,良仓、i良仓、物品、生活家、设计、导购、恋物、创意、良品、分享、社交、电商、淘宝、新视线、设计品、设计师、原创设计、北欧、独立设计师、设计品牌、明星导购、达人、设计商店、在线商店、闪购、打折、折扣、礼物、关注、粉丝、推荐、喜欢圈子、日本、全球购、丹麦、海外购、瑞典、复古、家居、家具、质感、品质" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="http://imgs-qn.iliangcang.com/css/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://imgs-qn.iliangcang.com/css/liangcang.css" />
+  <link rel="stylesheet" href="../CSS/xqy.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.css">
+
+
+  
+  <style>
+      body{
+          min-width: 1000px;
+      }
+      .input1{
+            width: 300px;
+        }
+  </style>
+  
+
+</head>
+<body id="body">
+
+<div id="header">
+  <div class="header-top">
+    <div class="wrap clearfix">
+      <div class="logo fl"><a href="./shouye.html"></a></div>
+      <ul class="nav fr" id="nav">
+      	        <li class="login-reg-btn"><a class="loginBtn shade"  href="./denglu.html">登录</a><a class="registerBtn shade" href="./denglu.html">注册</a></li>
+        
+        <li class="line"></li>
+        <li><a class="cart-wrapper" href="./gouwuche.html">购物车</a></li>
+        <li class="line"></li>
+        <li class="posr"><a target="_blank">消息</a></li>
+        <li class="line"></li>
+        <li class="add"><a class="shade">添加良品</a></li>
+          <li class="add"><a class="shade">资质证照 / 协议规则</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--二级导航开始-->
+  <div class="subMenu clearfix">
+    <ul class="fl">
+      <li class="homepage" style="width:86px;"><a href="./shouye.html" >首页</a></li>
+      <li class="subLi" sub_id="0"><a href="./shangdian.html"> 商店
+  	<div class="submHide store "  id="storedats" style="height: 300px;opacity: 0;">
+
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;" sub_id="1">
+      <a>杂志
+        <div class="submHide magazine" id="magazined">
+
+        </div>
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;" sub_id="2"><a>分享
+        <div class="submHide share clearfix" id="shared">
+
+        </div>
+
+      </a>
+      </li>
+      <li class="subLi" style="width:132px;"><a  >达人</a></li>
+       <li class="superman" style="width:86px;"><a >有偿资讯</a></li>
+      <p class="clr"></p>
+    </ul>
+    <div class="search fr">
+      <div class="search-input-wrap"> <div class="search-input" style="left: 280px;">
+        <input type="text" id="glb_keyword" placeholder="search..." onkeyup="enterSearchLister(event);"  >
+      </div> 
+    </div>
+        <s></s>
+      <a target="_self" href="javascript:void(0)" class="search-icon" style="opacity: 1;"></a></div>
+  </div>
+  <!-- 商店 -->
+  <div class="header-subnav" style="position:relative;margin: 0 auto;text-align: center;width: 1000px;"></div>
+  	<div id="header-subnav-wrapper">
+  		<div class="hide" id="shopdatas" style="display: block;">
+  			<div class="storeLeft fl">
+	            <dl id="navOurCatP_45" navCat_id="45" style="width:107px;height: 100px;">
+                    <div onMouseOver="javascript:show(this,'0')" onMouseOut="javascript:hide(this,'0')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23687.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="" class="ctxt">家居</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);margin-top:10px;margin-left:13px;display:block;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle0"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_62" navCat_id="62" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'1')" onMouseOut="javascript:hide(this,'1')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23686.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0062" class="ctxt">文具</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle1"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_69" navCat_id="69" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'2')" onMouseOut="javascript:hide(this,'2')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23683.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0069" class="ctxt">数码</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle2"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_77" navCat_id="77" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'3')" onMouseOut="javascript:hide(this,'3')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23682.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0077" class="ctxt">玩乐</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle3"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_82" navCat_id="82" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'4')" onMouseOut="javascript:hide(this,'4')">
+                        <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23684.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0082" class="ctxt">餐厨</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle4"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_92" navCat_id="92" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'5')" onMouseOut="javascript:hide(this,'5')">
+	            	    <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23680.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0092" class="ctxt">美食</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle5"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_112" navCat_id="112" style="width:107px;">
+                        <div onMouseOver="javascript:show(this,'6')" onMouseOut="javascript:hide(this,'6')">
+
+	            	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23678.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0112" class="ctxt">服装</a>
+                                </div>
+                            </div>
+                        </dt>
+                         </div>
+                        <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle6"></div>
+                </dl>
+
+                
+	            <dl id="navOurCatP_129" navCat_id="129" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'7')" onMouseOut="javascript:hide(this,'7')">
+	            	    <dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23676.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0129" class="ctxt">鞋包</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle7"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_141" navCat_id="141" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'8')" onMouseOut="javascript:hide(this,'8')">
+	                 	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23675.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0141" class="ctxt">配饰</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);
+                        -webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle8"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_154" navCat_id="154" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'9')" onMouseOut="javascript:hide(this,'9')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23681.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0154" class="ctxt">美护</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle9"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_166" navCat_id="166" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'10')" onMouseOut="javascript:hide(this,'10')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23674.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0166" class="ctxt">出行</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle10"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_182" navCat_id="182" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'11')" onMouseOut="javascript:hide(this,'11')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23668.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0182" class="ctxt">图书</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle11"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_214" navCat_id="214" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'12')" onMouseOut="javascript:hide(this,'12')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:207px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/23/23672.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0214" class="ctxt">艺术</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle12"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_279" navCat_id="279" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'13')" onMouseOut="javascript:hide(this,'13')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30074.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0279" class="ctxt">水具</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle13"></div>
+                </dl>
+
+	            	          	       	    
+	            <dl id="navOurCatP_358" navCat_id="358" style="width:107px;">
+                    <div onMouseOver="javascript:show(this,'14')" onMouseOut="javascript:hide(this,'14')">
+	                	<dt style="height:62px;margin-left:-20px;">
+                            <div class = "cat_img" style="margin-top:23px;margin-left:317px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30029.png" style="width:40px;height:40px">
+                                <div class = 'cat_name' style="width:50px;height:20px;margin-top:-76px;margin-left:6px;font-size:14px;">
+                                    <a href="/i/shop/list/?cat_id=0358" class="ctxt">运动</a>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <div style="position:absolute;width:6px;height:6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px;margin-left:13px;display:none;float:none;border-top:1px solid silver;border-left:1px solid silver;border-right:0px;border-bottom:0px;background:white" id="triangle14"></div>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--二级导航结束-->
+</div>
+
+ 
+<div style="margin-top: 100px;"></div>
+
+	<div class="container" style="width: 1000px;margin: 0 auto;">
+
+    </div>
+   
+         
+
+        <div style="width:720px;margin-top:-825px;margin: 0 auto;">
+            <div style="height:0px"></div>
+            <div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592887382110.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592890218505.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592892622571.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592895335436.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592898516591.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592900775022.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592903817331.jpg" class="mainImg"></div><div class="goodsDetail" style="line-height:0"><img src="https://imgs-qn.iliangcang.com//ware/ueditor/image/20190430/1556592905328594.jpg" class="mainImg"></div></div>
+        </div>
+
+<div id="service">
+	<a href="/i/shop/"><p class="hand"></p></a>
+    <div class="slogen">
+    	<dl class="fore1">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">全球精品</p>
+                <p class="english">Global Selections</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore2">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">正品保证</p>
+                <p class="english">Authenticity Guaranteed</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore3">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop">全场包邮</p>
+                <p class="english">Free Delivery</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <dl class="fore4">
+        	<dt></dt>
+            <dd>
+            	<p class="chinesetop phonehm"></p>
+                <p class="english">工作日 09:00-18:00</p>
+            </dd>
+            <p class="clr"></p>
+        </dl>
+        <p class="clr"></p>
+    </div>
+</div>
+
+<div id="footer" style="height:300px;">
+  <div class="wrap">
+    <div class="footLeft fl">
+        <a style="display:block;height:44px;width:196px;" target="_blank">
+            <div class="download">
+                <p class="iPhone"><span class="numLeFont">iPhone Android</span></p>
+                <p class="client-down">客户端下载</p>
+            </div>
+        </a>
+        <div class="friendly">
+            <p class="toplink"> <a href="/i/our/" target="_blank" class="first">关于良仓</a><a href="/i/our/service/" target="_blank" rel="nofollow">服务协议</a><a href="/i/our/law/" target="_blank" rel="nofollow">隐私保护政策</a><a href="/i/our/help/" target="_blank" rel="nofollow">使用指南</a><a href="/i/our/contact/" target="_blank" rel="nofollow">联系我们</a><a href="http://www.lagou.com/gongsi/2236.html" target="_blank" rel="nofollow">加入我们</a><a href="/i/our/flinks/" target="_blank" rel="nofollow">友情链接</a><a href='javascript:;' onclick="showSendMsgWin('良仓',1640);" class='contactUs' class="last">私信良仓</a></p>
+            <p><span class="numLeFont">&copy;</span>&nbsp;2013-2019 北京良仓文化传播有限公司版权所有&nbsp;</p>
+            <p>&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司&nbsp;&nbsp;电话：010-58696733</p>
+            <p>&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+            <p>&nbsp;&nbsp;社会信用统一代码：91110105059231575L&nbsp;&nbsp;食品许可证：JY11105160159557&nbsp;&nbsp;</p>
+            <p>&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证&nbsp;&nbsp;图书证编号：新出发京零 字第 朝 150051 号&nbsp;&nbsp;</p>
+            <p> <a style="background:url()" href="http://www.beian.miit.gov.cn" target="_blank">  <span style="margin-left: 3px;">京</span><span class="numLeFont">ICP</span>备<span class="numLeFont">13010677</span>号<span class="numLeFont">-1</span></a>&nbsp;京公网安备<span class="numLeFont">11010502025627</span></p>
+        </div>
+    </div>
+    <div class="footRight text-r fr">
+      <p class="clr"></p>
+      <div class="commun"><ul><li><a class="douban" href="http://site.douban.com/208766/" target="_blank"></a></li><li><a class="sina" href="http://weibo.com/iliangcang" target="_blank"></a></li><li><a class="= weixin" href="javascript:;"></div>
+    </div>
+  </div>
+</div>
+<script src="../JS/jquery-1.11.0.js"></script>
+<script src="../JS/bootstrap.js"></script>
+<script src="../JS/ajax.js"></script>
+<script src="../JS/xiangqing.js"></script>
+
+</body>
+</html>
+
+
+
+
